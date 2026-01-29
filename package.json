@@ -1,0 +1,35 @@
+{
+  "name": "@commonknowledge/ts-mapped-sdk",
+  "version": "0.0.1",
+  "description": "TypeScript types for the ts-mapped REST API",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/geojson": "^7946.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commonknowledge/ts-mapped-sdk.git"
+  },
+  "homepage": "https://github.com/commonknowledge/ts-mapped",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "types",
+    "geojson",
+    "api",
+    "sdk",
+    "mapped"
+  ]
+}
