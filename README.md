@@ -1,6 +1,6 @@
 # ts-mapped SDK
 
-TypeScript types for consuming the [ts-mapped](https://github.com/commonknowledge/ts-mapped) REST API.
+TypeScript SDK for consuming the [ts-mapped](https://github.com/commonknowledge/ts-mapped) REST API.
 
 > **Note:** This package is automatically generated from the ts-mapped repository. Do not edit directly.
 
@@ -15,12 +15,12 @@ npm install @commonknowledge/ts-mapped-sdk
 ## Usage
 
 ```typescript
-import type {
-  GeoJSONAPIResponse,
-  GeoJSONAPIFeature,
-  GeoJSONFeatureProperties,
-  APIRecordFilter,
-  APIRecordSort,
+import {
+  type GeoJSONAPIResponse,
+  type GeoJSONAPIFeature,
+  type GeoJSONFeatureProperties,
+  type APIRecordFilter,
+  type APIRecordSort,
   APIFilterOperator,
   APIFilterType,
 } from '@commonknowledge/ts-mapped-sdk';
@@ -37,6 +37,14 @@ async function fetchGeoJSON(dataSourceId: string): Promise<GeoJSONAPIResponse> {
   );
   return response.json();
 }
+
+// Use enums for filter operators
+const filter: APIRecordFilter = {
+  type: APIFilterType.TEXT,
+  column: 'name',
+  search: 'example',
+  operator: APIFilterOperator.AND,
+};
 ```
 
 ## Available Types
@@ -46,8 +54,8 @@ async function fetchGeoJSON(dataSourceId: string): Promise<GeoJSONAPIResponse> {
 - `GeoJSONFeatureProperties` - Properties object for each feature
 - `APIRecordFilter` - Filter configuration for querying
 - `APIRecordSort` - Sort configuration
-- `APIFilterOperator` - `AND` / `OR` operators
-- `APIFilterType` - `GEO` / `MULTI` / `TEXT` filter types
+- `APIFilterOperator` - `AND` / `OR` operators (enum)
+- `APIFilterType` - `GEO` / `MULTI` / `TEXT` filter types (enum)
 - `APIPoint` - Geographic coordinates (lat/lng)
 - `APIGeocodeResult` - Geocoding metadata
 - `GeoJSONAPIErrorResponse` - Error response structure
