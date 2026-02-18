@@ -28,6 +28,8 @@ export var APIFilterOperator;
  */
 export var APIFilterType;
 (function (APIFilterType) {
+    /** Exact match filter */
+    APIFilterType["EXACT"] = "EXACT";
     /** Geographic filter (proximity, turf) */
     APIFilterType["GEO"] = "GEO";
     /** Multi-select filter */

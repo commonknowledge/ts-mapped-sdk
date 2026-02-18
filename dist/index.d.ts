@@ -42,6 +42,8 @@ export declare enum APIFilterOperator {
  * Types of filters that can be applied
  */
 export declare enum APIFilterType {
+    /** Exact match filter */
+    EXACT = "EXACT",
     /** Geographic filter (proximity, turf) */
     GEO = "GEO",
     /** Multi-select filter */
