@@ -1,6 +1,6 @@
 {
   "name": "@commonknowledge/ts-mapped-sdk",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "TypeScript SDK for the ts-mapped REST API",
   "type": "module",
   "main": "./dist/index.js",

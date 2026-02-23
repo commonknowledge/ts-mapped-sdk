@@ -42,12 +42,16 @@ export declare enum APIFilterOperator {
  * Types of filters that can be applied
  */
 export declare enum APIFilterType {
+    /** Empty value filter */
+    EMPTY = "EMPTY",
     /** Exact match filter */
     EXACT = "EXACT",
     /** Geographic filter (proximity, turf) */
     GEO = "GEO",
     /** Multi-select filter */
     MULTI = "MULTI",
+    /** Not empty value filter */
+    NOT_EMPTY = "NOT_EMPTY",
     /** Text search filter */
     TEXT = "TEXT"
 }

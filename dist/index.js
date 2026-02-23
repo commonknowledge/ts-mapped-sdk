@@ -28,12 +28,16 @@ export var APIFilterOperator;
  */
 export var APIFilterType;
 (function (APIFilterType) {
+    /** Empty value filter */
+    APIFilterType["EMPTY"] = "EMPTY";
     /** Exact match filter */
     APIFilterType["EXACT"] = "EXACT";
     /** Geographic filter (proximity, turf) */
     APIFilterType["GEO"] = "GEO";
     /** Multi-select filter */
     APIFilterType["MULTI"] = "MULTI";
+    /** Not empty value filter */
+    APIFilterType["NOT_EMPTY"] = "NOT_EMPTY";
     /** Text search filter */
     APIFilterType["TEXT"] = "TEXT";
 })(APIFilterType || (APIFilterType = {}));
