@@ -32,6 +32,25 @@ export interface APIGeocodeResult {
     samplePoint: APIPoint | null;
 }
 /**
+ * Organisation information for a data source
+ */
+export interface APIDataSourceOrganisation {
+    id: string;
+    name: string;
+}
+/**
+ * A readable data source available to the authenticated user
+ */
+export interface APIDataSourceListItem {
+    id: string;
+    name: string;
+    organisation: APIDataSourceOrganisation;
+}
+/**
+ * Response from GET /api/rest/data-sources
+ */
+export type APIDataSourceListResponse = APIDataSourceListItem[];
+/**
  * Filter operators for combining filter conditions
  */
 export declare enum APIFilterOperator {
