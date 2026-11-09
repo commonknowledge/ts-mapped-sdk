@@ -66,4 +66,4 @@ For detailed usage examples, see the [API documentation](https://github.com/comm
 
 ## License
 
-MIT
+[GNU Affero General Public License v3.0](LICENSE)
